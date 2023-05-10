@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origem</title>
+</head>
+<body>
+    <h1>Verificação de Nacionalidade</h1>
+    Você é do país: <input type="text" name="txtor" id="txtor">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id = 'txtres'></div>
+    <script>
+   
+        function verificar() {
+            var country = window.document.getElementById('txtor');
+            var realcountry = country.value;
+            var res = window.document.getElementById('txtres');
+            if(realcountry == 'Brasil','brasil','brazil', 'Brazil') {
+                res.innerHTML += '<p>Você é <strong>BRASILEIRO!</strong></p>';
+            } else {
+                res.innerHTML += '<p>Você é <strong>ESTRANGEIRO!</strong></p>';
+            }           
+        }
+        
+        // DEU CERTO, USEI A VAR REALCOUNTRY PRA TRANSFORMAR A VAR COUNTRY DE INPUT ELEMENT >>> STRING, SIUU
+    </script>
+</body>
+</html>

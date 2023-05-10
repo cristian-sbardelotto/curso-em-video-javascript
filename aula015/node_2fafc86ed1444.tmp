@@ -1,0 +1,11 @@
+// ESTRUTURA DE REPETIÇÃO COM TESTE LÓGICO NO INÍCIO
+/*var c = 1
+while (c < 6) {
+    console.log('Tudo bem?');
+    c++;
+};*/
+// ESTRUTURA DE REPETIÇÃO COM TESTE LÓGICO NO FINAL
+var counter = 1
+do {
+    console.log(`Counter é igual a ${counter}.`)
+} while (counter <= 6);
